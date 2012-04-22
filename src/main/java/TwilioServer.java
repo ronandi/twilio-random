@@ -67,7 +67,7 @@ public class TwilioServer extends HttpServlet {
      */
     private String randomlyDecide(String[] command) {
         Random generator = new Random();
-        return ("You should " + command[generator.nextInt(command.length - 1) + 1]);
+        return ("You should " + command[generator.nextInt(command.length)]);
     }
     
     /*
